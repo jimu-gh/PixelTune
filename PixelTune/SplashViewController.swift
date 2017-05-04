@@ -38,7 +38,7 @@ class SplashViewController: UIViewController {
         
         loginSetup()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(SplashViewController.updateAfterLogin), name: NSNotification.Name(rawValue: "loginSuccessfull"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SplashViewController.updateAfterLogin), name: NSNotification.Name(rawValue: "loginSuccessful"), object: nil)
         
         let userDefaults = UserDefaults.standard
         
@@ -48,7 +48,7 @@ class SplashViewController: UIViewController {
             
             let sptsession = NSKeyedUnarchiver.unarchiveObject(with: sessionDataObj) as! SPTSession
             if !sptsession.isValid(){
-                print("Session not valid")
+                print("Session not valid. Trying to renew")
                 SPTAuth.defaultInstance().renewSession(sptsession, callback: { (error, session) in
                     if error == nil {
                         print("No errors in renewing")

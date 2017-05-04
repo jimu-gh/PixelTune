@@ -40,27 +40,27 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             
             let sptsession = NSKeyedUnarchiver.unarchiveObject(with: sessionDataObj) as! SPTSession
             if !sptsession.isValid(){
-                print("Session not valid")
+                print("Session not valid. (MAIN)")
                 SPTAuth.defaultInstance().renewSession(sptsession, callback: { (error, session) in
                     if error == nil {
-                        print("No errors in renewing")
+                        print("No errors in renewing. (MAIN)")
                         let sessionData = NSKeyedArchiver.archivedData(withRootObject: session!)
                         userDefaults.set(sessionData, forKey:"SpotifySession")
                         userDefaults.synchronize()
                         self.session = session
                         self.playUsingSession(sessionObj: session)
                     } else {
-                        print("Error refreshing session")
+                        print("Error refreshing session. (MAIN)")
                     }
                     
                 })
             } else {
-                print("Session is valid (MAIN)")
+                print("Session is valid. (MAIN)")
                 playUsingSession(sessionObj: sptsession)
             }
             
         } else {
-            print("No session, need to login.")
+            print("No session, need to login. (MAIN)")
         }
     }
     

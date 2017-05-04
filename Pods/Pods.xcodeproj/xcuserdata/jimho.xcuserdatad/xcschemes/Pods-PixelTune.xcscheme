@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D227AAF92913CDCA06792774C1E1C870"
+               BlueprintIdentifier = "BAE1DB6CB12C668A73EE68654DB39349"
                BuildableName = "Pods_PixelTune.framework"
                BlueprintName = "Pods-PixelTune"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D227AAF92913CDCA06792774C1E1C870"
+            BlueprintIdentifier = "BAE1DB6CB12C668A73EE68654DB39349"
             BuildableName = "Pods_PixelTune.framework"
             BlueprintName = "Pods-PixelTune"
             ReferencedContainer = "container:Pods.xcodeproj">

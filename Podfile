@@ -17,4 +17,5 @@ use_frameworks!
 
 target 'PixelTune' do
     pod 'SwiftyJSON'
+    pod 'Alamofire', '~> 4.4'
 end

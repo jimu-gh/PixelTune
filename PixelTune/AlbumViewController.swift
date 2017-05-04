@@ -29,6 +29,7 @@ class AlbumViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var albumCollection: UICollectionView!
     
     @IBAction func exitAlbum(_ sender: UIBarButtonItem) {
+        self.player?.setIsPlaying(false, callback: nil)
         delegate?.exitAlbumButton(by: self)
     }
     

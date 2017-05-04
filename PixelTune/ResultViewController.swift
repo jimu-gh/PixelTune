@@ -207,7 +207,7 @@ class ResultViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
             
             let sptsession = NSKeyedUnarchiver.unarchiveObject(with: sessionDataObj) as! SPTSession
             if !sptsession.isValid(){
-                print("Session not valid")
+                print("Session not valid. Trying to renew session.")
                 SPTAuth.defaultInstance().renewSession(sptsession, callback: { (error, session) in
                     if error == nil {
                         print("No errors in renewing")
@@ -217,7 +217,7 @@ class ResultViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                         self.session = session
                         self.playUsingSession(sessionObj: session)
                     } else {
-                        print("Error refreshing session")
+                        print("Error renewing session")
                     }
                     
                 })
@@ -227,10 +227,9 @@ class ResultViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
             }
             
         } else {
-            loginButton.isHidden = false
-            playPauseButton.setTitle(" ", for: UIControlState.normal)
-            nextSongButton.setTitle(" ", for: UIControlState.normal)
-            prevSongButton.setTitle(" ", for: UIControlState.normal)
+            playPauseButton.setTitle("", for: UIControlState.normal)
+            nextSongButton.setTitle("", for: UIControlState.normal)
+            prevSongButton.setTitle("", for: UIControlState.normal)
         }
         
         createRequest(with: binaryImageData!)
@@ -565,6 +564,8 @@ class ResultViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         favoriteButton.isHidden = false
         playPauseButton.setTitle("⏸", for: UIControlState.normal)
+        nextSongButton.setTitle("⏭", for: UIControlState.normal)
+        prevSongButton.setTitle("⏮", for: UIControlState.normal)
         songChosen = true
         self.playSong(position: indexPath.row)
     }
