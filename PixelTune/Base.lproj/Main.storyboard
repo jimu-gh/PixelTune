@@ -24,12 +24,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-OE-Bhg">
-                                <rect key="frame" x="78" y="84" width="219" height="103"/>
+                                <rect key="frame" x="49.5" y="84" width="276.5" height="130"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Instatune">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="64" name="Noteworthy-Light"/>
+                                            <font key="NSFont" size="81" name="Noteworthy-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -37,10 +37,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWK-3a-k97">
-                                <rect key="frame" x="150" y="456" width="75" height="75"/>
+                                <rect key="frame" x="127.5" y="252" width="120" height="115"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="5u5-mR-GL2"/>
-                                    <constraint firstAttribute="width" constant="75" id="VgU-8U-7AP"/>
+                                    <constraint firstAttribute="height" constant="115" id="5u5-mR-GL2"/>
+                                    <constraint firstAttribute="width" constant="120" id="VgU-8U-7AP"/>
                                 </constraints>
                                 <state key="normal" image="camera"/>
                                 <connections>
@@ -48,10 +48,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxk-8y-tju">
-                                <rect key="frame" x="157" y="463" width="60" height="60"/>
+                                <rect key="frame" x="137" y="423" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="R0q-xd-pXF"/>
-                                    <constraint firstAttribute="height" constant="60" id="cNx-aM-TqB"/>
+                                    <constraint firstAttribute="width" constant="100" id="R0q-xd-pXF"/>
+                                    <constraint firstAttribute="height" constant="100" id="cNx-aM-TqB"/>
                                 </constraints>
                                 <state key="normal" image="loginButton"/>
                                 <connections>
@@ -68,7 +68,7 @@
                         <color key="backgroundColor" red="0.1333333333" green="0.2784313725" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hC5-mv-nbW" firstAttribute="top" secondItem="Gxk-8y-tju" secondAttribute="bottom" constant="144" id="A0l-rc-AHJ"/>
-                            <constraint firstItem="hC5-mv-nbW" firstAttribute="top" secondItem="RWK-3a-k97" secondAttribute="bottom" constant="136" id="Dcg-d7-uLC"/>
+                            <constraint firstItem="hC5-mv-nbW" firstAttribute="top" secondItem="RWK-3a-k97" secondAttribute="bottom" constant="300" id="Dcg-d7-uLC"/>
                             <constraint firstItem="RH5-OE-Bhg" firstAttribute="centerX" secondItem="vKk-J2-qyA" secondAttribute="centerX" id="Js1-ww-dqY"/>
                             <constraint firstItem="0L7-dP-uZL" firstAttribute="trailing" secondItem="vKk-J2-qyA" secondAttribute="trailingMargin" constant="8" id="Otk-vE-rhI"/>
                             <constraint firstItem="RWK-3a-k97" firstAttribute="centerX" secondItem="vKk-J2-qyA" secondAttribute="centerX" id="SwH-v2-OCf"/>
@@ -443,7 +443,7 @@
             </objects>
             <point key="canvasLocation" x="6692" y="123.68815592203899"/>
         </scene>
-        <!--Save Instatune-->
+        <!--Save PixelTune-->
         <scene sceneID="uzm-w0-bwb">
             <objects>
                 <viewController id="xha-Er-B3i" customClass="SaveViewController" customModule="PixelTune" customModuleProvider="target" sceneMemberID="viewController">
@@ -584,7 +584,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="Save Instatune" id="iSx-AK-0ht">
+                    <navigationItem key="navigationItem" title="Save PixelTune" id="iSx-AK-0ht">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="LPp-RB-Phe">
                             <connections>
                                 <action selector="exitSave:" destination="xha-Er-B3i" id="hb2-ry-1i4"/>
@@ -602,7 +602,7 @@
             </objects>
             <point key="canvasLocation" x="8876" y="123.68815592203899"/>
         </scene>
-        <!--Your Album-->
+        <!--PixelTune Album-->
         <scene sceneID="SJ1-66-WWe">
             <objects>
                 <viewController id="mNC-1y-wHs" customClass="AlbumViewController" customModule="PixelTune" customModuleProvider="target" sceneMemberID="viewController">
@@ -713,7 +713,7 @@
                         <color key="backgroundColor" red="0.1333333333" green="0.2784313725" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                     </stackView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="Your Album" id="jqW-l6-9bL">
+                    <navigationItem key="navigationItem" title="PixelTune Album" id="jqW-l6-9bL">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Mmb-ZF-sUA">
                             <connections>
                                 <action selector="exitAlbum:" destination="mNC-1y-wHs" id="oEP-7C-Jp0"/>

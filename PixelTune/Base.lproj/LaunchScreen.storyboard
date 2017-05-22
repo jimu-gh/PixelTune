@@ -22,13 +22,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54d-Wb-GQM">
-                                <rect key="frame" x="78.5" y="84" width="218.5" height="102.5"/>
+                                <rect key="frame" x="43.5" y="84" width="288.5" height="130"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Instatune">
+                                    <fragment content="PixelTune">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="64" name="Noteworthy-Light"/>
-                                            <font key="NSOriginalFont" size="64" name="Noteworthy-Light"/>
+                                            <font key="NSFont" size="81" name="Noteworthy-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>

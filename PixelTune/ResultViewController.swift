@@ -411,7 +411,7 @@ class ResultViewController: UIViewController, SPTAudioStreamingPlaybackDelegate,
                 }
                 
                 self.labelCollection.reloadData()
-                self.nowPlayingLabel.text = "Your Instatunes are ready. Enjoy!"
+                self.nowPlayingLabel.text = "Your Pixeltunes are ready. Enjoy!"
                 self.makeAPICalls()
             }
         })
